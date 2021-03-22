@@ -12,7 +12,7 @@ public class FxmlApp extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		//컨트롤
-		Parent root = FXMLLoader.load(getClass().getResource("AnchorPane.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("inputPackage/Root.fxml"));
 
 		//scene (컨테이너를 Scene의 매개값으로 넣음)
 		Scene scene = new Scene(root);

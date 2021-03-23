@@ -47,6 +47,9 @@ public class RootController implements Initializable {
 				new Phone("갤럭시S6", "phone06.png"),
 				new Phone("갤럭시S7", "phone07.png")
 				);
+		//TableColumn<Phone, String> tcSmartPhone = (TableColumn<Phone, String>) tableView.getColumns().get(0);
+		
+		
 		TableColumn tcSmartPhone = tableView.getColumns().get(0);
 		tcSmartPhone.setCellValueFactory(new PropertyValueFactory("smartPhone"));
 		tcSmartPhone.setStyle("-fx-alignment:CENTER;");
@@ -62,7 +65,7 @@ public class RootController implements Initializable {
 					@Override
 					public void changed(ObservableValue<? extends Phone> observable, Phone oldValue, Phone newValue) {
 						if(newValue != null) {
-							imageView.setImage(new Image(getClass().getResource("images/" + newValue.getImage()).toString()));
+							imageView.setImage(new Image(getClass().getResource("../../images/" + newValue.getImage()).toString()));
 						}						
 					}					
 				});
@@ -75,7 +78,7 @@ public class RootController implements Initializable {
 
 		Phone phone = tableView.getSelectionModel().getSelectedItem();
 		System.out.println("TableView 스마트폰: " + phone.getSmartPhone());
-		System.out.println("TableView 이미지: " + phone.getImage());
+		System.out.println("ImageView 이미지: " + phone.getImage() + "\n");
 	}
 
 	public void handleBtnCancelAction(ActionEvent e) {

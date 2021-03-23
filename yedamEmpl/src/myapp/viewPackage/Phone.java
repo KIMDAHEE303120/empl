@@ -27,4 +27,13 @@ public class Phone {
 		this.image.set(image);
 	}
 
+	//strignProperty 리턴해주기 위한 메소드..?
+	public SimpleStringProperty smartPhoneProperty() {
+		return smartPhone;
+	}
+	
+	public SimpleStringProperty imageProperty() {
+		return image;
+	}
+	
 }

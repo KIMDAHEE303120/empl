@@ -59,12 +59,10 @@ public class BoardController implements Initializable {
 
 		deleteBtn.setOnAction(e -> deleteBtnAction(e));
 		addBtn.setOnAction(new EventHandler<ActionEvent>() {
-
 			@Override
 			public void handle(ActionEvent e) {
 				addBtnAction(e);
 			}
-
 		});
 
 		ObservableList<BoardVO> list = InputDAO.boardList();

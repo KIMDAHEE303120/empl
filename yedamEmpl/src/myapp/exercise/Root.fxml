@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="myapp.exercise.RootController">
+   <center>
+      <TableView fx:id="" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn minWidth="150.0" prefWidth="75.0" text="이름" />
+          <TableColumn minWidth="140.0" prefWidth="75.0" text="국어" />
+            <TableColumn minWidth="140.0" prefWidth="75.0" text="수학" />
+            <TableColumn minWidth="140.0" prefWidth="75.0" text="영어" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addBtn" onAction="#addBtnAction" text="추가">
+               <HBox.margin>
+                  <Insets left="275.0" top="50.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
